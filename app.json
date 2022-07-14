@@ -25,6 +25,10 @@
       "description": "your api hash, take it from my.telegram.org",
       "value": ""
     },
+    "DATABASE_URL":{
+      "description": "your database url",
+      "value": ""
+    },
     "CHANNEL_ID":{
       "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
       "value": "-100"
@@ -41,11 +45,6 @@
       "description": "Optional: Force Sub message of bot, use HTML parsemode format",
       "value": "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>"
     },
-    "DB_URI": {
-      "description": "your Database Url",
-      "value": "",
-      "required": false
-    },
     "ADMINS": {
       "description": "A space separated list of user_ids of Admins, they can only create links",
       "value": "",
@@ -57,12 +56,9 @@
       "required": false
     }
   },
-  "addons": [
+  "buildpacks": [
     {
-    "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
+      "url": "heroku/python"
     }
   ],
   "formation": {
