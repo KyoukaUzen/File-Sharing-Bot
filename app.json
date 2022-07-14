@@ -41,6 +41,11 @@
       "description": "Optional: Force Sub message of bot, use HTML parsemode format",
       "value": "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>"
     },
+    "DATABASE_URI": {
+      "description": "your Database Url",
+      "value": "",
+      "required": false
+    },
     "ADMINS": {
       "description": "A space separated list of user_ids of Admins, they can only create links",
       "value": "",
@@ -58,11 +63,6 @@
       "options": {
         "version": "12"
       }
-    }
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/python"
     }
   ],
   "formation": {
