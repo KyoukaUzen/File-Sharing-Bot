@@ -41,7 +41,7 @@
       "description": "Optional: Force Sub message of bot, use HTML parsemode format",
       "value": "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>"
     },
-    "DATABASE_URI": {
+    "DB_URI": {
       "description": "your Database Url",
       "value": "",
       "required": false
